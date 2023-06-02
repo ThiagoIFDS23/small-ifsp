@@ -1,0 +1,8 @@
+Programa divisiveis5
+Var
+    i: inteiro
+Inicio
+    para i de 0 ate 145 passo 5 faca
+        escreva(i)
+    fim_para
+Fim

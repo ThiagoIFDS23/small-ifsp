@@ -1,0 +1,10 @@
+Programa somatoriopares
+Var
+    somatorio, i: inteiro
+Inicio
+    somatorio <- 0
+    para i de 10 ate 20 passo 2 faca
+        somatorio <- somatorio + i
+    fim_para
+    escreva("O somatório de todos os pares de 10 até 20 é: ", somatorio)
+Fim

@@ -1,0 +1,13 @@
+Programa Questao2
+Var
+    r, area, perimetro: real
+    PI: real
+Inicio
+    PI <- 3,14
+    escreva("Qual é o raio da circunferência?")
+    leia(r)
+    area <- PI*r*r
+    comprimento <- 2*PI*r
+    escreva("A área da circunferência é: ", area)
+    escreva("O comprimento da circunferência é: ", comprimento)
+Fim

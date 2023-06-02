@@ -1,0 +1,14 @@
+Programa media15
+Var
+    N, i, soma, media: real
+Inicio
+    soma <- 0
+    para i de 1 ate 15 passo 1 faca
+        escreva("Digite um número.")
+        leia(N)
+        soma <- soma + N
+    fim_para
+    media <- soma/15
+    escreva("A soma dos 15 números digitados é: ", soma)
+    escreva("A média dos 15 números digitados é: ", media)
+Fim

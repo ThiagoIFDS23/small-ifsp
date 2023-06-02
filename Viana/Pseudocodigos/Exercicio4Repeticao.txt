@@ -1,0 +1,19 @@
+Programa tabuadinha
+Var
+    n, produto, i: inteiro
+Inicio
+    n <- -1
+    escreva("Escolha um número natural.")
+    enquanto (n < 0) faca
+        leia(n)
+        se (n < 0) faca
+            inicio
+                escreva("Escolha um número INTEIRO MAIOR que ZERO.")
+            fim
+        fim_se
+    fim_enquanto
+    para i de 1 ate 10 passo 1 faca
+        produto = i*n
+        escreva(n, "x", i, " = ", produto)
+    fim_para
+Fim
