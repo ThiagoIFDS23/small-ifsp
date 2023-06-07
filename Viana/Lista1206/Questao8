@@ -1,0 +1,22 @@
+Programa Questao8
+Var
+	N: inteiro
+Inicio
+	escreva("Digite um número inteiro.")
+	leia(N)
+	se (N = 0) entao
+		inicio
+			escreva("O número dado é zero, e portanto, nem positivo nem negativo.")
+		fim
+	fim_se
+	se (N > 0) entao
+		inicio
+			escreva("O número dado é positivo.")
+		fim
+	fim_se
+	se (N < 0) entao
+		inicio
+			escreva("O número dado é negativo.")
+		fim
+	fim_se
+Fim

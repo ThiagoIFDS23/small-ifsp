@@ -1,0 +1,28 @@
+Programa Questao25
+Var
+	N, i: inteiro
+	triangular: logico
+Inicio
+	escreva("Digite um número inteiro: ")
+	leia(N)
+	
+	i <- 1
+	enquanto (i <= (N div i)) faca
+		se (N = i*(i+1)*(i+2)) entao
+			inicio
+				triangular <- VERDADEIRO
+			fim
+		fim_se
+		i <- i + 1
+	fim_enquanto
+
+	se (triangular = VERDADEIRO) entao
+		inicio
+			escreva("O número dado é triangular.")
+		fim
+	senao
+		inicio
+			escreva("O número dado não é triangular.")
+		fim
+	fim_se
+Fim

@@ -1,0 +1,24 @@
+Programa Questao24
+Var
+	A, B, quociente: inteiro
+Inicio
+	enquanto (A <= 0) ou (B <= 0) faca
+		escreva("Digite um inteiro positivo para A: ")
+		leia(A)
+		escreva("Digite um inteiro positivo para B: ")
+		leia(B)
+		se (A <= 0) ou (B <= 0) entao
+			inicio
+				escreva("Um dos valores dados não é POSITIVO. Tente novamente.")
+			fim
+		fim_se
+	fim_enquanto
+
+	quociente <- 0
+	enquanto (A > B) faca
+		A <- A - B
+		quociente <- quociente + 1
+	fim_enquanto
+
+	escreva("O quociente da divisão de A por B é ", quociente)
+Fim

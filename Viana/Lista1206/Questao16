@@ -1,0 +1,9 @@
+Programa Questao16
+Var
+	velocidade: real
+Inicio
+	escreva("Digite uma velocidade, em m/s: ")
+	leia(velocidade)
+	velocidade <- velocidade*3,6
+	escreva("A velocidade dada é, em km/h: ", velocidade)
+Fim

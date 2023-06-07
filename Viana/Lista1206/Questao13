@@ -1,0 +1,29 @@
+Programa Questao13
+Var
+	N, maior, semimaior, soma, i: inteiro
+Inicio
+	para i de 1 ate 3 passo 1 faca
+		escreva("Digite um número inteiro.")
+		leia(N)
+		se (i = 1) entao
+			inicio
+				maior <- N
+				semimaior <- N
+			fim
+		fim_se
+		se (N > maior) entao
+			inicio
+				maior <- N
+			fim
+		senao
+			inicio
+				se (N > semimaior) entao
+					inicio
+						semimaior <- N
+					fim
+			fim
+		fim_se
+	fim_para
+	soma <- maior + semimaior
+	escreva("A soma dos dois maiores números digitados é ", soma)
+Fim

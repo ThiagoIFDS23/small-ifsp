@@ -1,0 +1,24 @@
+Programa Questao10
+Var
+	N: inteiro
+Inicio
+	N <- -1
+	enquanto (N < 0) faca
+		escreva("Digite um número inteiro não-negativo: ")
+		leia(N)
+		se (N < 0) entao
+			inicio
+				escreva("Por favor, digite um número inteiro MAIOR ou IGUAL a zero. Tente novamente.")
+			fim
+		fim_se
+	fim_enquanto
+	se (N mod 2 = 0) entao
+		inicio
+			escreva("O número dado é par.")
+		fim
+	senao
+		inicio
+			escreva("O número dado não é par.")
+		fim
+	fim_se
+Fim

@@ -1,0 +1,14 @@
+Programa Questao29
+Var
+	i: inteiro
+Inicio
+	i <- 1
+	enquanto (i <= 100) faca
+		se (i mod 2 = 0) entao
+			inicio
+				escreva(i)
+			fim
+		fim_se
+		i <- i + 1
+	fim_enquanto
+Fim

@@ -1,0 +1,13 @@
+Programa Questao9
+Var
+	N: inteiro
+Inicio
+	escreva("Digite um número inteiro: ")
+	leia(N)
+	se (N < 0) entao
+		inicio
+			N <- N * (-1)
+		fim
+	fim_se
+	escreva("O módulo do número dado é ", N)
+Fim

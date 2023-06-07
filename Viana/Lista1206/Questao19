@@ -1,0 +1,30 @@
+Programa Questao19
+Var
+	renda_mensal, valor_total: real
+	prestacoes: inteiro
+Inicio
+	escreva("Qual é a renda mensal?")
+	leia(renda_mensal)
+	escreva("Qual é o valor total do empréstimo solicitado?")
+	leia(valor_total)
+	prestacoes <- 0
+	enquanto (prestacoes <= 0) faca
+		escreva("Qual é o número de emprestações?")
+		leia(prestacoes)
+		se (prestacoes <= 0) entao
+			inicio
+				escreva("Por favor, digite um número positivo de parcelas. Tente novamente.")
+			fim
+		fim_se
+	fim_enquanto
+
+	se (valor_total <= 10*renda_mensal) e (valor_total/prestacoes <= 0.3*renda_mensal) entao
+		inicio
+			escreva("O empréstimo pode ser concedido.")
+		fim
+	senao
+		inicio
+			escreva("O empréstimo não pode ser concedido.")
+		fim
+	fim_se
+Fim

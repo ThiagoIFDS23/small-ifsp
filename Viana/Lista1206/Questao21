@@ -1,0 +1,40 @@
+Programa Questao21
+Var
+	i: inteiro
+	N: real
+	temp, um, dois, tres, quatro, cinco: logico
+	classificacao: caractere
+Inicio
+	para i de 1 ate 5 passo 1 faca
+		escreva("Digite a nota do exame número ", i, ": ")
+		leia(N)
+		temp <- i >= 70
+		escolha
+			caso i = 1
+				um = temp			
+			caso i = 2
+				dois = temp
+			caso i = 3
+				tres = temp
+			caso i = 4
+				quatro = temp
+			caso i = 5
+				cinco = temp
+	fim_para
+	escolha
+		caso (um = dois) e (dois = tres) e (tres = quatro) e (quatro = cinco) e (cinco = VERDADEIRO)
+			classificacao <- "A"
+		caso (um = dois) e (dois = quatro) e (quatro = VERDADEIRO) e ((tres = FALSO) ou (cinco = FALSO))
+			classificacao <- "B"
+		caso (um = dois) e (dois = VERDADEIRO) e ((tres = VERDADEIRO) ou (quatro = VERDADEIRO)) e (cinco = FALSO)
+			classificacao <- "C"
+	se (classificacao = "") entao
+		inicio
+			escreva("Reprovado.")
+		fim
+	senao
+		inicio
+			escreva("Sua classificação é ", classificacao)
+		fim
+	fim_se
+Fim

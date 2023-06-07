@@ -1,0 +1,23 @@
+Programa Questao14
+Var
+	sombra_predio, sombra_humano, altura_predio, altura_humano: real
+Inicio
+	sombra_predio <- 0
+	enquanto (sombra_predio <= 0) ou (sombra_humano <= 0) ou (altura_humano <= 0) faca
+		escreva("Qual é o tamanho da sombra do prédio?")
+		leia (sombra_predio)
+		escreva("Qual é o tamanho da sua sombra?")
+		leia(sombra_humano)
+		escreva("Qual é a sua altura?")
+		leia(altura_humano)
+
+		se (sombra_predio <= 0) ou (sombra_humano <= 0) ou (altura_humano <= 0) entao
+			inicio
+				escreva("Por favor, digite um tamanho válido. Apenas números maiores que 0 serão aceitos. Tente novamente.")
+			fim
+		fim_se
+	fim_enquanto
+
+	altura_predio <- (sombra_predio*altura_humano)/sombra_humano
+	escreva("A altura do prédio é ", altura_predio)
+Fim

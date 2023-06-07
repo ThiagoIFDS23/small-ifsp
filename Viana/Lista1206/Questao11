@@ -1,0 +1,20 @@
+Programa Questao11
+Var
+	N, i, maior: inteiro
+Inicio
+	para i de 1 ate 3 passo 1 faca
+		escreva("Digite um número inteiro: ")
+		leia(N)
+		se (i = 1) entao
+			inicio
+				maior <- N
+			fim
+		fim_se
+		se (N > maior) entao
+			inicio
+				maior <- N
+			fim
+		fim_se
+	fim_para
+	escreva("O maior número escrito foi ", maior)
+Fim
