@@ -1,0 +1,909 @@
+<html>
+<head><style>div {
+	border: 3pt double black;
+	border-radius: 5px;
+	background-color: #8a96a8;
+	white-space: pre;
+	display: grid;
+}
+
+p {
+	margin: 1px;
+}
+</style></head>
+<body>
+<h1>João Victor Santos</h1>
+<div>
+<h1>Questão 1</h1>
+
+<p>Programa Questao1</p>
+<p>Var</p>
+<p>    base, altura, area, perimetro: real</p>
+<p>Inicio</p>
+<p>    escreva("Qual é o valor da base do retângulo?")</p>
+<p>    leia(base)</p>
+<p>    escreva("Qual é o valor da altura do retângulo?")</p>
+<p>    leia(altura)</p>
+<p>    area <- base*altura</p>
+<p>    perimetro <- 2*(base+altura)</p>
+<p>    escreva("A área do retângulo é: ", area)</p>
+<p>    escreva("O perímetro do retângulo é: ", perimetro)</p>
+<p>Fim</p>
+</div>
+<hr>
+<div>
+<h1>Questão 2</h1>
+
+<p>Programa Questao2</p>
+<p>Var</p>
+<p>    r, area, perimetro: real</p>
+<p>    PI: real</p>
+<p>Inicio</p>
+<p>    PI <- 3,14</p>
+<p>    escreva("Qual é o raio da circunferência?")</p>
+<p>    leia(r)</p>
+<p>    area <- PI*r*r</p>
+<p>    comprimento <- 2*PI*r</p>
+<p>    escreva("A área da circunferência é: ", area)</p>
+<p>    escreva("O comprimento da circunferência é: ", comprimento)</p>
+<p>Fim</p>
+</div>
+<hr>
+<div>
+<h1>Questão 3</h1>
+
+<p>Programa Questao3</p>
+<p>Var</p>
+<p>    a, b, c, perimetro: real</p>
+<p>Inicio</p>
+<p>    escreva("Digite um dos lados do triângulo.")</p>
+<p>    leia(a)</p>
+<p>    escreva("Digite outro lado do triângulo.")</p>
+<p>    leia(b)</p>
+<p>    escreva("Digite o último lado do triângulo.")</p>
+<p>    leia(c)</p>
+<p>    se (a < b+c) e (b < a+c) e (c < a+b) entao</p>
+<p>        inicio</p>
+<p>            perimetro <- a+b+c</p>
+<p>            escreva("O perímetro desse triângulo é: ", perimetro)</p>
+<p>        fim</p>
+<p>    senao</p>
+<p>        inicio</p>
+<p>            escreva("O triângulo dado não existe.")        </p>
+<p>        fim</p>
+<p>    fim_se</p>
+<p>Fim</p>
+</div>
+<hr>
+<div>
+<h1>Questão 4</h1>
+
+<p>Programa Questao4</p>
+<p>Var</p>
+<p>	N: inteiro</p>
+<p>Inicio</p>
+<p>	escreva("Digite um número inteiro: ")</p>
+<p>	leia(N)</p>
+<p>	N <- N+1</p>
+<p>	escreva("O sucessor desse número é ", N)</p>
+<p>Fim</p>
+</div>
+<hr>
+<div>
+<h1>Questão 5</h1>
+
+<p>Programa Questao5</p>
+<p>Var</p>
+<p>	a, b, quociente, resto: inteiro</p>
+<p>Inicio</p>
+<p>	a <- 0</p>
+<p>	enquanto (a < 0) faca</p>
+<p>		escreva("Digite um número inteiro: ")</p>
+<p>		leia(a)</p>
+<p>		se (a < 0) entao</p>
+<p>			inicio</p>
+<p>				escreva("Esse número não pode ser negativo. Por favor, tente novamente.")</p>
+<p>			fim</p>
+<p>		fim_se</p>
+<p>	fim_enquanto</p>
+<p>	</p>
+<p>	b <- 0</p>
+<p>	enquanto (b = 0) faca</p>
+<p>		escreva("Digite um número inteiro DIFERENTE de 0: ")</p>
+<p>		leia(b)</p>
+<p>		se (b = 0) faca</p>
+<p>			inicio</p>
+<p>				escreva("Esse número não pode ser zero. Por favor, tente novamente.")</p>
+<p>			fim</p>
+<p>		fim_se</p>
+<p>	fim_enquanto</p>
+<p>	quociente <- a div b</p>
+<p>	resto <- a mod b</p>
+<p>	escreva("O quociente da divisão de ", a, " por ", b, " é: ", quociente)</p>
+<p>	escreva("O resto da divisão de ", a, " por ", b, " é: ", resto)</p>
+<p>Fim</p>
+</div>
+<hr>
+<div>
+<h1>Questão 6</h1>
+
+<p>Programa Questao6</p>
+<p>Var</p>
+<p>	idade, anos, meses, dias: inteiro</p>
+<p>Inicio</p>
+<p>	idade <- -1</p>
+<p>	enquanto (idade < 0) faca</p>
+<p>		escreva("Digite sua idade em dias, como um número inteiro não-negativo: ")</p>
+<p>		leia(idade)</p>
+<p>		se (idade < 0) entao</p>
+<p>			inicio</p>
+<p>				escreva("Por favor, digite um número inteiro POSITIVO. Tente novamente.")</p>
+<p>			fim</p>
+<p>		fim_se</p>
+<p>	fim_enquanto</p>
+<p>	dias <- idade</p>
+<p>	meses <- idade div 30</p>
+<p>	anos <- idade div 365</p>
+<p>	escreva("Você tem ", anos, " anos de idade.")</p>
+<p>	escreva("Você tem ", meses, " meses de idade.")</p>
+<p>	escreva("Você tem ", dias, " dias de idade.")</p>
+<p>Fim</p>
+</div>
+<hr>
+<div>
+<h1>Questão 7</h1>
+
+<p>Programa Questao7</p>
+<p>Var</p>
+<p>	N, c, d, u, invertido: inteiro</p>
+<p>Inicio</p>
+<p>	N <- 0</p>
+<p>	enquanto (N < 100) ou (N > 999) faca</p>
+<p>		escreva("Digite um número inteiro não negativo de três algarismos.")</p>
+<p>		leia(N)</p>
+<p>		se (N < 100) ou (N > 999) entao</p>
+<p>			inicio</p>
+<p>				escreva("Você não seguiu as orientações dadas. Por favor, tente novamente.")</p>
+<p>			fim</p>
+<p>		fim_se</p>
+<p>	fim_enquanto</p>
+<p>	</p>
+<p>	c <- N div 100</p>
+<p>	d <- (N - 100*c) div 10</p>
+<p>	u <- N - 10*d - 100*c</p>
+<p>	invertido <- c + 10*d + 100*u</p>
+<p>	escreva("O número invertido do número dado é: ", invertido)</p>
+<p>Fim</p>
+</div>
+<hr>
+<div>
+<h1>Questão 8</h1>
+
+<p>Programa Questao8</p>
+<p>Var</p>
+<p>	N: inteiro</p>
+<p>Inicio</p>
+<p>	escreva("Digite um número inteiro.")</p>
+<p>	leia(N)</p>
+<p>	se (N = 0) entao</p>
+<p>		inicio</p>
+<p>			escreva("O número dado é zero, e portanto, nem positivo nem negativo.")</p>
+<p>		fim</p>
+<p>	fim_se</p>
+<p>	se (N > 0) entao</p>
+<p>		inicio</p>
+<p>			escreva("O número dado é positivo.")</p>
+<p>		fim</p>
+<p>	fim_se</p>
+<p>	se (N < 0) entao</p>
+<p>		inicio</p>
+<p>			escreva("O número dado é negativo.")</p>
+<p>		fim</p>
+<p>	fim_se</p>
+<p>Fim</p>
+</div>
+<hr>
+<div>
+<h1>Questão 9</h1>
+
+<p>Programa Questao9</p>
+<p>Var</p>
+<p>	N: inteiro</p>
+<p>Inicio</p>
+<p>	escreva("Digite um número inteiro: ")</p>
+<p>	leia(N)</p>
+<p>	se (N < 0) entao</p>
+<p>		inicio</p>
+<p>			N <- N * (-1)</p>
+<p>		fim</p>
+<p>	fim_se</p>
+<p>	escreva("O módulo do número dado é ", N)</p>
+<p>Fim</p>
+</div>
+<hr>
+<div>
+<h1>Questão 10</h1>
+
+<p>Programa Questao10</p>
+<p>Var</p>
+<p>	N: inteiro</p>
+<p>Inicio</p>
+<p>	N <- -1</p>
+<p>	enquanto (N < 0) faca</p>
+<p>		escreva("Digite um número inteiro não-negativo: ")</p>
+<p>		leia(N)</p>
+<p>		se (N < 0) entao</p>
+<p>			inicio</p>
+<p>				escreva("Por favor, digite um número inteiro MAIOR ou IGUAL a zero. Tente novamente.")</p>
+<p>			fim</p>
+<p>		fim_se</p>
+<p>	fim_enquanto</p>
+<p>	se (N mod 2 = 0) entao</p>
+<p>		inicio</p>
+<p>			escreva("O número dado é par.")</p>
+<p>		fim</p>
+<p>	senao</p>
+<p>		inicio</p>
+<p>			escreva("O número dado não é par.")</p>
+<p>		fim</p>
+<p>	fim_se</p>
+<p>Fim</p>
+</div>
+<hr>
+<div>
+<h1>Questão 11</h1>
+
+<p>Programa Questao11</p>
+<p>Var</p>
+<p>	N, i, maior: inteiro</p>
+<p>Inicio</p>
+<p>	para i de 1 ate 3 passo 1 faca</p>
+<p>		escreva("Digite um número inteiro: ")</p>
+<p>		leia(N)</p>
+<p>		se (i = 1) entao</p>
+<p>			inicio</p>
+<p>				maior <- N</p>
+<p>			fim</p>
+<p>		fim_se</p>
+<p>		se (N > maior) entao</p>
+<p>			inicio</p>
+<p>				maior <- N</p>
+<p>			fim</p>
+<p>		fim_se</p>
+<p>	fim_para</p>
+<p>	escreva("O maior número escrito foi ", maior)</p>
+<p>Fim</p>
+</div>
+<hr>
+<div>
+<h1>Questão 12</h1>
+
+<p>Programa Questao12</p>
+<p>Var</p>
+<p>	mes: inteiro</p>
+<p>Inicio</p>
+<p>	enquanto (mes <= 0) faca</p>
+<p>		escreva("Digite um número inteiro positivo equivalente a um mês: ")</p>
+<p>		leia(mes)</p>
+<p>		se (mes <= 0) entao</p>
+<p>			inicio</p>
+<p>				escreva("Por favor, digite um número inteiro NÃO-NEGATIVO. Tente novamente.")</p>
+<p>			fim</p>
+<p>		fim_se</p>
+<p>	fim_enquanto</p>
+<p></p>
+<p>	se (mes = 2) entao</p>
+<p>		inicio</p>
+<p>			escreva("Esse mês tem 28 dias nos anos não bissextos e tem 29 dias nos anos bissextos.")</p>
+<p>		fim</p>
+<p>	senao</p>
+<p>		inicio</p>
+<p>			se (mes = 1) ou (mes = 3) ou (mes = 5) ou (mes = 7) ou (mes = 8) ou (mes = 10) ou (mes = 12) entao</p>
+<p>				inicio</p>
+<p>					escreva("Esse mês tem 31 dias.")</p>
+<p>				fim</p>
+<p>			senao</p>
+<p>				inicio</p>
+<p>					escreva("Esse ano tem 30 dias.")</p>
+<p>				fim</p>
+<p>			fim_se</p>
+<p>		fim</p>
+<p>	fim_se</p>
+<p>Fim</p>
+</div>
+<hr>
+<div>
+<h1>Questão 13</h1>
+
+<p>Programa Questao13</p>
+<p>Var</p>
+<p>	N, maior, semimaior, soma, i: inteiro</p>
+<p>Inicio</p>
+<p>	para i de 1 ate 3 passo 1 faca</p>
+<p>		escreva("Digite um número inteiro.")</p>
+<p>		leia(N)</p>
+<p>		se (i = 1) entao</p>
+<p>			inicio</p>
+<p>				maior <- N</p>
+<p>				semimaior <- N</p>
+<p>			fim</p>
+<p>		fim_se</p>
+<p>		se (N > maior) entao</p>
+<p>			inicio</p>
+<p>				maior <- N</p>
+<p>			fim</p>
+<p>		senao</p>
+<p>			inicio</p>
+<p>				se (N > semimaior) entao</p>
+<p>					inicio</p>
+<p>						semimaior <- N</p>
+<p>					fim</p>
+<p>			fim</p>
+<p>		fim_se</p>
+<p>	fim_para</p>
+<p>	soma <- maior + semimaior</p>
+<p>	escreva("A soma dos dois maiores números digitados é ", soma)</p>
+<p>Fim</p>
+</div>
+<hr>
+<div>
+<h1>Questão 14</h1>
+
+<p>Programa Questao14</p>
+<p>Var</p>
+<p>	sombra_predio, sombra_humano, altura_predio, altura_humano: real</p>
+<p>Inicio</p>
+<p>	sombra_predio <- 0</p>
+<p>	enquanto (sombra_predio <= 0) ou (sombra_humano <= 0) ou (altura_humano <= 0) faca</p>
+<p>		escreva("Qual é o tamanho da sombra do prédio?")</p>
+<p>		leia (sombra_predio)</p>
+<p>		escreva("Qual é o tamanho da sua sombra?")</p>
+<p>		leia(sombra_humano)</p>
+<p>		escreva("Qual é a sua altura?")</p>
+<p>		leia(altura_humano)</p>
+<p></p>
+<p>		se (sombra_predio <= 0) ou (sombra_humano <= 0) ou (altura_humano <= 0) entao</p>
+<p>			inicio</p>
+<p>				escreva("Por favor, digite um tamanho válido. Apenas números maiores que 0 serão aceitos. Tente novamente.")</p>
+<p>			fim</p>
+<p>		fim_se</p>
+<p>	fim_enquanto</p>
+<p></p>
+<p>	altura_predio <- (sombra_predio*altura_humano)/sombra_humano</p>
+<p>	escreva("A altura do prédio é ", altura_predio)</p>
+<p>Fim</p>
+</div>
+<hr>
+<div>
+<h1>Questão 15</h1>
+
+<p>Programa Questao15</p>
+<p>Var</p>
+<p>	nota, soma, media: real</p>
+<p>	i: inteiro</p>
+<p>Inicio</p>
+<p>	soma <- 0</p>
+<p>	para i de 1 ate 4 passo 1 faca</p>
+<p>		enquanto (nota < 0) faca</p>
+<p>			escreva("Digite a nota da prova número ", trunca(sin(3.1415*(i + 0.5))/2), " do bimestre número ", trunca((i+1)/2), ": ")</p>
+<p>			leia(nota)</p>
+<p>			se (nota < 0) entao</p>
+<p>				inicio</p>
+<p>					escreva("A nota não pode ser negativa. Tente novamente.")</p>
+<p>				fim</p>
+<p>			fim_se</p>
+<p>		fim_enquanto</p>
+<p>		soma <- soma + nota</p>
+<p>	fim_para</p>
+<p>	media <- soma/4</p>
+<p>	escreva("A média semestral desse aluno é: ", media)</p>
+<p>Fim</p>
+</div>
+<hr>
+<div>
+<h1>Questão 16</h1>
+
+<p>Programa Questao16</p>
+<p>Var</p>
+<p>	velocidade: real</p>
+<p>Inicio</p>
+<p>	escreva("Digite uma velocidade, em m/s: ")</p>
+<p>	leia(velocidade)</p>
+<p>	velocidade <- velocidade*3,6</p>
+<p>	escreva("A velocidade dada é, em km/h: ", velocidade)</p>
+<p>Fim</p>
+</div>
+<hr>
+<div>
+<h1>Questão 17</h1>
+
+<p>Programa Questao17</p>
+<p>Var</p>
+<p>	salario, inss: real</p>
+<p>Inicio</p>
+<p>	escreva("Digite um salário: ")</p>
+<p>	leia(salario)</p>
+<p>	inss <- salario * 0.11</p>
+<p>	se (inss > 334.49) entao</p>
+<p>		inicio</p>
+<p>			inss <- 334.49</p>
+<p>		fim</p>
+<p>	fim_se</p>
+<p>	escreva("O desconto do INSS para esse salário é ", inss)</p>
+<p>Fim</p>
+</div>
+<hr>
+<div>
+<h1>Questão 18</h1>
+
+<p>Programa Questao18</p>
+<p>Var</p>
+<p>	litros, desconto, preco: real</p>
+<p>	tipo: caractere</p>
+<p>Inicio</p>
+<p>	escreva("Quantos litros foram vendidos?")</p>
+<p>	leia(litros)</p>
+<p>	enquanto (tipo <> "A") ou (tipo <> "G") faca</p>
+<p>		escreva("Qual o tipo de combustível? Escreva A para álcool e G para gasolina.")</p>
+<p>		leia(tipo)</p>
+<p>		se (tipo <> "A") ou (tipo <> "G") entao</p>
+<p>			inicio</p>
+<p>			escreva("Digite apenas os tipos válidos. Tente novamente.")</p>
+<p>			fim</p>
+<p>		fim_se</p>
+<p>	fim_enquanto</p>
+<p>	desconto <- 0.02</p>
+<p>	se (tipo = "A") e (litros > 25) entao</p>
+<p>		inicio</p>
+<p>			desconto <- 0.04</p>
+<p>		fim</p>
+<p>	fim_se</p>
+<p>	senao</p>
+<p>		inicio</p>
+<p>			se (litros <= 25) entao</p>
+<p>				inicio</p>
+<p>					desconto <- 0.03</p>
+<p>				fim</p>
+<p>			senao</p>
+<p>				inicio</p>
+<p>					desconto <- 0.05</p>
+<p>				fim</p>
+<p>			fim_se</p>
+<p>		fim</p>
+<p>	fim_se</p>
+<p>	se (tipo = "A") entao</p>
+<p>		inicio</p>
+<p>			preco <- 3.8*litros*(1-desconto)</p>
+<p>		fim</p>
+<p>	senao</p>
+<p>		inicio</p>
+<p>			preco <- 4.9*litros*(1-desconto)</p>
+<p>		fim</p>
+<p>	fim_se</p>
+<p>	escreva("O valor total a ser pago é de R$", preco)</p>
+<p>Fim</p>
+</div>
+<hr>
+<div>
+<h1>Questão 19</h1>
+
+<p>Programa Questao19</p>
+<p>Var</p>
+<p>	renda_mensal, valor_total: real</p>
+<p>	prestacoes: inteiro</p>
+<p>Inicio</p>
+<p>	escreva("Qual é a renda mensal?")</p>
+<p>	leia(renda_mensal)</p>
+<p>	escreva("Qual é o valor total do empréstimo solicitado?")</p>
+<p>	leia(valor_total)</p>
+<p>	prestacoes <- 0</p>
+<p>	enquanto (prestacoes <= 0) faca</p>
+<p>		escreva("Qual é o número de emprestações?")</p>
+<p>		leia(prestacoes)</p>
+<p>		se (prestacoes <= 0) entao</p>
+<p>			inicio</p>
+<p>				escreva("Por favor, digite um número positivo de parcelas. Tente novamente.")</p>
+<p>			fim</p>
+<p>		fim_se</p>
+<p>	fim_enquanto</p>
+<p></p>
+<p>	se (valor_total <= 10*renda_mensal) e (valor_total/prestacoes <= 0.3*renda_mensal) entao</p>
+<p>		inicio</p>
+<p>			escreva("O empréstimo pode ser concedido.")</p>
+<p>		fim</p>
+<p>	senao</p>
+<p>		inicio</p>
+<p>			escreva("O empréstimo não pode ser concedido.")</p>
+<p>		fim</p>
+<p>	fim_se</p>
+<p>Fim</p>
+</div>
+<hr>
+<div>
+<h1>Questão 20</h1>
+
+<p>Programa Questao20</p>
+<p>Var</p>
+<p>	tecla: caractere</p>
+<p>Inicio</p>
+<p>	escreva("Digite uma tecla do teclado: ")</p>
+<p>	leia(tecla)</p>
+<p>	</p>
+<p>	escolha</p>
+<p>		caso tecla = "0"</p>
+<p>			escreva("Número")</p>
+<p>		caso tecla = "1"</p>
+<p>			escreva("Número")</p>
+<p>		caso tecla = "2"</p>
+<p>			escreva("Número")</p>
+<p>		caso tecla = "3"</p>
+<p>			escreva("Número")</p>
+<p>		caso tecla = "4"</p>
+<p>			escreva("Número")</p>
+<p>		caso tecla = "5"</p>
+<p>			escreva("Número")</p>
+<p>		caso tecla = "6"</p>
+<p>			escreva("Número")</p>
+<p>		caso tecla = "7"</p>
+<p>			escreva("Número")</p>
+<p>		caso tecla = "8"</p>
+<p>			escreva("Número")</p>
+<p>		caso tecla = "9"</p>
+<p>			escreva("Número")</p>
+<p>			</p>
+<p>		caso (tecla = "a") ou (tecla = "A")</p>
+<p>			escreva("Vogal")</p>
+<p>		caso (tecla = "e") ou (tecla = "E")</p>
+<p>			escreva("Vogal")</p>
+<p>		caso (tecla = "i") ou (tecla = "I")</p>
+<p>			escreva("Vogal")</p>
+<p>		caso (tecla = "o") ou (tecla = "O")</p>
+<p>			escreva("Vogal")</p>
+<p>		caso (tecla = "u") ou (tecla = "U")</p>
+<p>			escreva("Vogal")</p>
+<p></p>
+<p>		senao</p>
+<p>			escreva("Consoante")</p>
+<p>Fim</p>
+</div>
+<hr>
+<div>
+<h1>Questão 21</h1>
+
+<p>Programa Questao21</p>
+<p>Var</p>
+<p>	i: inteiro</p>
+<p>	N: real</p>
+<p>	temp, um, dois, tres, quatro, cinco: logico</p>
+<p>	classificacao: caractere</p>
+<p>Inicio</p>
+<p>	para i de 1 ate 5 passo 1 faca</p>
+<p>		escreva("Digite a nota do exame número ", i, ": ")</p>
+<p>		leia(N)</p>
+<p>		temp <- i >= 70</p>
+<p>		escolha</p>
+<p>			caso i = 1</p>
+<p>				um = temp			</p>
+<p>			caso i = 2</p>
+<p>				dois = temp</p>
+<p>			caso i = 3</p>
+<p>				tres = temp</p>
+<p>			caso i = 4</p>
+<p>				quatro = temp</p>
+<p>			caso i = 5</p>
+<p>				cinco = temp</p>
+<p>	fim_para</p>
+<p>	escolha</p>
+<p>		caso (um = dois) e (dois = tres) e (tres = quatro) e (quatro = cinco) e (cinco = VERDADEIRO)</p>
+<p>			classificacao <- "A"</p>
+<p>		caso (um = dois) e (dois = quatro) e (quatro = VERDADEIRO) e ((tres = FALSO) ou (cinco = FALSO))</p>
+<p>			classificacao <- "B"</p>
+<p>		caso (um = dois) e (dois = VERDADEIRO) e ((tres = VERDADEIRO) ou (quatro = VERDADEIRO)) e (cinco = FALSO)</p>
+<p>			classificacao <- "C"</p>
+<p>	se (classificacao = "") entao</p>
+<p>		inicio</p>
+<p>			escreva("Reprovado.")</p>
+<p>		fim</p>
+<p>	senao</p>
+<p>		inicio</p>
+<p>			escreva("Sua classificação é ", classificacao)</p>
+<p>		fim</p>
+<p>	fim_se</p>
+<p>Fim</p>
+</div>
+<hr>
+<div>
+<h1>Questão 22</h1>
+
+<p>Programa Questao22</p>
+<p>Var</p>
+<p>	N, dezena, unidade: inteiro</p>
+<p>	d_ext, u_ext: caractere</p>
+<p>Inicio</p>
+<p>	N <- 0</p>
+<p>	enquanto (N < 1) ou (N > 100) faca</p>
+<p>		escreva("Digite um número inteiro de 1 a 100: ")</p>
+<p>		leia(N)</p>
+<p>		se (N < 1) ou (N > 100) entao</p>
+<p>			inicio</p>
+<p>				escreva("Por favor, digite um número no intervalo dado. Tente novamente.")</p>
+<p>			fim</p>
+<p>		fim_se</p>
+<p>	fim_enquanto</p>
+<p>	dezena <- N div 10</p>
+<p>	unidade <- N - dezena*10</p>
+<p>	se (N = 100) entao</p>
+<p>		inicio</p>
+<p>			escreva("cem")</p>
+<p>		fim</p>
+<p>	senao</p>
+<p>		inicio</p>
+<p>			escolha</p>
+<p>				caso dezena = 0</p>
+<p>					d_ext <- ""</p>
+<p>				caso dezena = 2</p>
+<p>					d_ext <- "vinte"</p>
+<p>				caso dezena = 3</p>
+<p>					d_ext <- "trinta"</p>
+<p>				caso dezena = 4</p>
+<p>					d_ext <- "quarenta"</p>
+<p>				caso dezena = 5</p>
+<p>					d_ext <- "cinquenta"</p>
+<p>				caso dezena = 6</p>
+<p>					d_ext <- "sessenta"</p>
+<p>				caso dezena = 7</p>
+<p>					d_ext <- "setenta"</p>
+<p>				caso dezena = 8</p>
+<p>					d_ext <- "oitenta"</p>
+<p>				caso dezena = 9</p>
+<p>					d_ext <- "noventa"</p>
+<p></p>
+<p>			escolha</p>
+<p>				caso unidade = 0</p>
+<p>					u_ext <- ""</p>
+<p>				caso unidade = 1</p>
+<p>					u_ext <- "um"</p>
+<p>				caso unidade = 2</p>
+<p>					u_ext <- "dois"</p>
+<p>				caso unidade = 3</p>
+<p>					u_ext <- "tres"</p>
+<p>				caso unidade = 4</p>
+<p>					u_ext <- "quatro"</p>
+<p>				caso unidade = 5</p>
+<p>					u_ext <- "cinco"</p>
+<p>				caso unidade = 6</p>
+<p>					u_ext <- "seis"</p>
+<p>				caso unidade = 7</p>
+<p>					u_ext <- "sete"</p>
+<p>				caso unidade = 8</p>
+<p>					u_ext <- "oito"</p>
+<p>				caso unidade = 9</p>
+<p>					u_ext <- "nove"</p>
+<p></p>
+<p>			se (dezena = 0) entao</p>
+<p>				inicio</p>
+<p>					escreva(u_ext) </p>
+<p>				fim</p>
+<p>			fim_se</p>
+<p>			senao</p>
+<p>				inicio</p>
+<p>				se (dezena = 1) entao</p>
+<p>					inicio</p>
+<p>						escolha</p>
+<p>							caso unidade = 0</p>
+<p>								escreva("dez")</p>
+<p>							caso unidade = 1</p>
+<p>								escreva("onze")</p>
+<p>							caso unidade = 2</p>
+<p>								escreva("doze")</p>
+<p>							caso unidade = 3</p>
+<p>								escreva("treze")</p>
+<p>							caso unidade = 4</p>
+<p>								escreva("quatorze")</p>
+<p>							caso unidade = 5</p>
+<p>								escreva("quinze")</p>
+<p>							caso unidade = 6</p>
+<p>								escreva("dezesseis")</p>
+<p>							caso unidade = 7</p>
+<p>								escreva("dezessete")</p>
+<p>							caso unidade = 8</p>
+<p>								escreva("dezoito")</p>
+<p>							caso unidade = 9</p>
+<p>								escreva("dezenove")</p>
+<p>					fim</p>
+<p>				senao</p>
+<p>					inicio</p>
+<p>						se (u_ext <> "") entao</p>
+<p>							inicio</p>
+<p>								escreva(d_ext + " e " + u_ext)</p>
+<p>							fim</p>
+<p>						senao</p>
+<p>							inicio</p>
+<p>								escreva(d_ext)</p>
+<p>							fim</p>
+<p>						fim_se</p>
+<p>					fim</p>
+<p>				fim_se</p>
+<p>				fim</p>
+<p>			fim_se</p>
+<p>		fim</p>
+<p>	fim_se</p>
+<p>Fim</p>
+</div>
+<hr>
+<div>
+<h1>Questão 23</h1>
+
+<p>Programa Questao23</p>
+<p>Var</p>
+<p>	N, fatorial, i: inteiro</p>
+<p>Inicio</p>
+<p>	N <- -1</p>
+<p>	enquanto (N < 0) faca</p>
+<p>		escreva("Digite um número inteiro não-negativo: ")</p>
+<p>		leia(N)</p>
+<p>		se (N < 0) entao</p>
+<p>			inicio</p>
+<p>				escreva("Por favor, digite um número inteiro NÃO-NEGATIVO.")</p>
+<p>			fim</p>
+<p>		fim_se</p>
+<p>	fim_enquanto</p>
+<p></p>
+<p>	fatorial <- 1</p>
+<p>	para i de 1 ate (N - 1) passo 1 faca</p>
+<p>		fatorial <- fatorial * i</p>
+<p>	fim_para</p>
+<p></p>
+<p>	se (N = 0) entao</p>
+<p>		inicio</p>
+<p>			N <- 1</p>
+<p>		fim</p>
+<p>	fim_se</p>
+<p>	</p>
+<p>	se ((fatorial + 1) mod N = 0) e (N <> 1) entao</p>
+<p>		inicio</p>
+<p>			escreva("O número dado é primo.")</p>
+<p>		fim</p>
+<p>	senao</p>
+<p>		inicio</p>
+<p>			escreva("O número dado não é primo.")</p>
+<p>		fim</p>
+<p>	fim_se</p>
+<p>Fim</p>
+</div>
+<hr>
+<div>
+<h1>Questão 24</h1>
+
+<p>Programa Questao24</p>
+<p>Var</p>
+<p>	A, B, quociente: inteiro</p>
+<p>Inicio</p>
+<p>	enquanto (A <= 0) ou (B <= 0) faca</p>
+<p>		escreva("Digite um inteiro positivo para A: ")</p>
+<p>		leia(A)</p>
+<p>		escreva("Digite um inteiro positivo para B: ")</p>
+<p>		leia(B)</p>
+<p>		se (A <= 0) ou (B <= 0) entao</p>
+<p>			inicio</p>
+<p>				escreva("Um dos valores dados não é POSITIVO. Tente novamente.")</p>
+<p>			fim</p>
+<p>		fim_se</p>
+<p>	fim_enquanto</p>
+<p></p>
+<p>	quociente <- 0</p>
+<p>	enquanto (A > B) faca</p>
+<p>		A <- A - B</p>
+<p>		quociente <- quociente + 1</p>
+<p>	fim_enquanto</p>
+<p></p>
+<p>	escreva("O quociente da divisão de A por B é ", quociente)</p>
+<p>Fim</p>
+</div>
+<hr>
+<div>
+<h1>Questão 25</h1>
+
+<p>Programa Questao25</p>
+<p>Var</p>
+<p>	N, i: inteiro</p>
+<p>	triangular: logico</p>
+<p>Inicio</p>
+<p>	escreva("Digite um número inteiro: ")</p>
+<p>	leia(N)</p>
+<p>	</p>
+<p>	i <- 1</p>
+<p>	enquanto (i <= (N div i)) faca</p>
+<p>		se (N = i*(i+1)*(i+2)) entao</p>
+<p>			inicio</p>
+<p>				triangular <- VERDADEIRO</p>
+<p>			fim</p>
+<p>		fim_se</p>
+<p>		i <- i + 1</p>
+<p>	fim_enquanto</p>
+<p></p>
+<p>	se (triangular = VERDADEIRO) entao</p>
+<p>		inicio</p>
+<p>			escreva("O número dado é triangular.")</p>
+<p>		fim</p>
+<p>	senao</p>
+<p>		inicio</p>
+<p>			escreva("O número dado não é triangular.")</p>
+<p>		fim</p>
+<p>	fim_se</p>
+<p>Fim</p>
+</div>
+<hr>
+<div>
+<h1>Questão 26</h1>
+
+</div>
+<hr>
+<div>
+<h1>Questão 27</h1>
+
+<p>Programa Questao27</p>
+<p>Var</p>
+<p>	i: inteiro</p>
+<p>Inicio</p>
+<p>	i <- 1</p>
+<p>	enquanto (i <= 100) faca</p>
+<p>		escreva(i)</p>
+<p>		i <- i + 1</p>
+<p>	fim_enquanto</p>
+<p>Fim</p>
+</div>
+<hr>
+<div>
+<h1>Questão 28</h1>
+
+<p>Programa Questao28</p>
+<p>Var</p>
+<p>	i: inteiro</p>
+<p>Inicio</p>
+<p>	i <- 100</p>
+<p>	enquanto (i >= 0) faca</p>
+<p>		escreva(i)</p>
+<p>		i <- i - 1</p>
+<p>	fim_enquanto</p>
+<p>Fim</p>
+</div>
+<hr>
+<div>
+<h1>Questão 29</h1>
+
+<p>Programa Questao29</p>
+<p>Var</p>
+<p>	i: inteiro</p>
+<p>Inicio</p>
+<p>	i <- 1</p>
+<p>	enquanto (i <= 100) faca</p>
+<p>		se (i mod 2 = 0) entao</p>
+<p>			inicio</p>
+<p>				escreva(i)</p>
+<p>			fim</p>
+<p>		fim_se</p>
+<p>		i <- i + 1</p>
+<p>	fim_enquanto</p>
+<p>Fim</p>
+</div>
+<hr>
+<div>
+<h1>Questão 30</h1>
+
+<p>Programa Questao30</p>
+<p>Var</p>
+<p>	i: inteiro</p>
+<p>Inicio</p>
+<p>	i <- 1</p>
+<p>	enquanto (i <= 100) faca</p>
+<p>		escreva(i)</p>
+<p>		i <- i + 1</p>
+<p>	fim_enquanto</p>
+<p>	escreva("A soma de todos os números anteriores é ", 100*101/2)</p>
+<p>Fim</p>
+</div>
+<hr>
+
+</body>
+</html>

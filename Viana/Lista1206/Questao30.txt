@@ -1,4 +1,4 @@
-Programa Questao27
+Programa Questao30
 Var
 	i: inteiro
 Inicio
