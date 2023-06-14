@@ -1,0 +1,11 @@
+div {
+	border: 3pt double black;
+	border-radius: 5px;
+	background-color: #8a96a8;
+	white-space: pre;
+	display: grid;
+}
+
+p {
+	margin: 1px;
+}

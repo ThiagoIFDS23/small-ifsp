@@ -1,0 +1,21 @@
+Programa Questao6
+Var
+	idade, anos, meses, dias: inteiro
+Inicio
+	idade <- -1
+	enquanto (idade < 0) faca
+		escreva("Digite sua idade em dias, como um número inteiro não-negativo: ")
+		leia(idade)
+		se (idade < 0) entao
+			inicio
+				escreva("Por favor, digite um número inteiro POSITIVO. Tente novamente.")
+			fim
+		fim_se
+	fim_enquanto
+	dias <- idade
+	meses <- idade div 30
+	anos <- idade div 365
+	escreva("Você tem ", anos, " anos de idade.")
+	escreva("Você tem ", meses, " meses de idade.")
+	escreva("Você tem ", dias, " dias de idade.")
+Fim

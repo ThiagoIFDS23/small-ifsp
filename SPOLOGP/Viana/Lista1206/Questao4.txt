@@ -1,0 +1,9 @@
+Programa Questao4
+Var
+	N: inteiro
+Inicio
+	escreva("Digite um número inteiro: ")
+	leia(N)
+	N <- N+1
+	escreva("O sucessor desse número é ", N)
+Fim

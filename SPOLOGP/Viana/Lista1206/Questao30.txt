@@ -1,0 +1,11 @@
+Programa Questao30
+Var
+	i: inteiro
+Inicio
+	i <- 1
+	enquanto (i <= 100) faca
+		escreva(i)
+		i <- i + 1
+	fim_enquanto
+	escreva("A soma de todos os números anteriores é ", 100*101/2)
+Fim

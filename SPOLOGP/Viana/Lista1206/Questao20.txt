@@ -1,0 +1,43 @@
+Programa Questao20
+Var
+	tecla: caractere
+Inicio
+	escreva("Digite uma tecla do teclado: ")
+	leia(tecla)
+	
+	escolha
+		caso tecla = "0"
+			escreva("Número")
+		caso tecla = "1"
+			escreva("Número")
+		caso tecla = "2"
+			escreva("Número")
+		caso tecla = "3"
+			escreva("Número")
+		caso tecla = "4"
+			escreva("Número")
+		caso tecla = "5"
+			escreva("Número")
+		caso tecla = "6"
+			escreva("Número")
+		caso tecla = "7"
+			escreva("Número")
+		caso tecla = "8"
+			escreva("Número")
+		caso tecla = "9"
+			escreva("Número")
+			
+		caso (tecla = "a") ou (tecla = "A")
+			escreva("Vogal")
+		caso (tecla = "e") ou (tecla = "E")
+			escreva("Vogal")
+		caso (tecla = "i") ou (tecla = "I")
+			escreva("Vogal")
+		caso (tecla = "o") ou (tecla = "O")
+			escreva("Vogal")
+		caso (tecla = "u") ou (tecla = "U")
+			escreva("Vogal")
+
+		senao
+			escreva("Consoante")
+Fim

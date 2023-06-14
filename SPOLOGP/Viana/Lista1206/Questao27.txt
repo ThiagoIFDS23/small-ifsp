@@ -1,0 +1,10 @@
+Programa Questao27
+Var
+	i: inteiro
+Inicio
+	i <- 1
+	enquanto (i <= 100) faca
+		escreva(i)
+		i <- i + 1
+	fim_enquanto
+Fim

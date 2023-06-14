@@ -1,0 +1,21 @@
+Programa Questao7
+Var
+	N, c, d, u, invertido: inteiro
+Inicio
+	N <- 0
+	enquanto (N < 100) ou (N > 999) faca
+		escreva("Digite um número inteiro não negativo de três algarismos.")
+		leia(N)
+		se (N < 100) ou (N > 999) entao
+			inicio
+				escreva("Você não seguiu as orientações dadas. Por favor, tente novamente.")
+			fim
+		fim_se
+	fim_enquanto
+	
+	c <- N div 100
+	d <- (N - 100*c) div 10
+	u <- N - 10*d - 100*c
+	invertido <- c + 10*d + 100*u
+	escreva("O número invertido do número dado é: ", invertido)
+Fim

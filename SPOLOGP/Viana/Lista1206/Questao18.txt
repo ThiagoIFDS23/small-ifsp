@@ -1,0 +1,46 @@
+Programa Questao18
+Var
+	litros, desconto, preco: real
+	tipo: caractere
+Inicio
+	escreva("Quantos litros foram vendidos?")
+	leia(litros)
+	enquanto (tipo <> "A") ou (tipo <> "G") faca
+		escreva("Qual o tipo de combustível? Escreva A para álcool e G para gasolina.")
+		leia(tipo)
+		se (tipo <> "A") ou (tipo <> "G") entao
+			inicio
+			escreva("Digite apenas os tipos válidos. Tente novamente.")
+			fim
+		fim_se
+	fim_enquanto
+	desconto <- 0.02
+	se (tipo = "A") e (litros > 25) entao
+		inicio
+			desconto <- 0.04
+		fim
+	fim_se
+	senao
+		inicio
+			se (litros <= 25) entao
+				inicio
+					desconto <- 0.03
+				fim
+			senao
+				inicio
+					desconto <- 0.05
+				fim
+			fim_se
+		fim
+	fim_se
+	se (tipo = "A") entao
+		inicio
+			preco <- 3.8*litros*(1-desconto)
+		fim
+	senao
+		inicio
+			preco <- 4.9*litros*(1-desconto)
+		fim
+	fim_se
+	escreva("O valor total a ser pago é de R$", preco)
+Fim

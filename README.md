@@ -1,2 +1,2 @@
 # small-ifsp
-Pequenos projetos feitos no IFSP.
+Scripts, programas e trabalhos feitos por mim para aprendizado no IFSP.

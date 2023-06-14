@@ -1,0 +1,30 @@
+Programa Questao5
+Var
+	a, b, quociente, resto: inteiro
+Inicio
+	a <- 0
+	enquanto (a < 0) faca
+		escreva("Digite um número inteiro: ")
+		leia(a)
+		se (a < 0) entao
+			inicio
+				escreva("Esse número não pode ser negativo. Por favor, tente novamente.")
+			fim
+		fim_se
+	fim_enquanto
+	
+	b <- 0
+	enquanto (b = 0) faca
+		escreva("Digite um número inteiro DIFERENTE de 0: ")
+		leia(b)
+		se (b = 0) faca
+			inicio
+				escreva("Esse número não pode ser zero. Por favor, tente novamente.")
+			fim
+		fim_se
+	fim_enquanto
+	quociente <- a div b
+	resto <- a mod b
+	escreva("O quociente da divisão de ", a, " por ", b, " é: ", quociente)
+	escreva("O resto da divisão de ", a, " por ", b, " é: ", resto)
+Fim

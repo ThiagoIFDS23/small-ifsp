@@ -1,0 +1,36 @@
+Programa Questao23
+Var
+	N, fatorial, i: inteiro
+Inicio
+	N <- -1
+	enquanto (N < 0) faca
+		escreva("Digite um número inteiro não-negativo: ")
+		leia(N)
+		se (N < 0) entao
+			inicio
+				escreva("Por favor, digite um número inteiro NÃO-NEGATIVO.")
+			fim
+		fim_se
+	fim_enquanto
+
+	fatorial <- 1
+	para i de 1 ate (N - 1) passo 1 faca
+		fatorial <- fatorial * i
+	fim_para
+
+	se (N = 0) entao
+		inicio
+			N <- 1
+		fim
+	fim_se
+	
+	se ((fatorial + 1) mod N = 0) e (N <> 1) entao
+		inicio
+			escreva("O número dado é primo.")
+		fim
+	senao
+		inicio
+			escreva("O número dado não é primo.")
+		fim
+	fim_se
+Fim

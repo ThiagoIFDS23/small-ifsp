@@ -1,0 +1,14 @@
+Programa Questao17
+Var
+	salario, inss: real
+Inicio
+	escreva("Digite um salário: ")
+	leia(salario)
+	inss <- salario * 0.11
+	se (inss > 334.49) entao
+		inicio
+			inss <- 334.49
+		fim
+	fim_se
+	escreva("O desconto do INSS para esse salário é ", inss)
+Fim

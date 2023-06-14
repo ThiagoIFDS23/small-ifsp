@@ -1,0 +1,32 @@
+Programa Questao12
+Var
+	mes: inteiro
+Inicio
+	enquanto (mes <= 0) faca
+		escreva("Digite um número inteiro positivo equivalente a um mês: ")
+		leia(mes)
+		se (mes <= 0) entao
+			inicio
+				escreva("Por favor, digite um número inteiro NÃO-NEGATIVO. Tente novamente.")
+			fim
+		fim_se
+	fim_enquanto
+
+	se (mes = 2) entao
+		inicio
+			escreva("Esse mês tem 28 dias nos anos não bissextos e tem 29 dias nos anos bissextos.")
+		fim
+	senao
+		inicio
+			se (mes = 1) ou (mes = 3) ou (mes = 5) ou (mes = 7) ou (mes = 8) ou (mes = 10) ou (mes = 12) entao
+				inicio
+					escreva("Esse mês tem 31 dias.")
+				fim
+			senao
+				inicio
+					escreva("Esse ano tem 30 dias.")
+				fim
+			fim_se
+		fim
+	fim_se
+Fim
